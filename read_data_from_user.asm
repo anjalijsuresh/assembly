@@ -16,20 +16,20 @@ main:
 	push ebp
 	mov ebp,esp
 	
-	push display
+	push display                  ;print "Enter your name"
 	call printf
 	add esp,4
 
-	push read
+	push read                     ; read the user input
 	push format
 	call scanf
 	add esp,4
 
-	push output
+	push output                   ; display "Good morning"
 	call printf
 	add esp,4
 
-	push read
+	push read                      ; display user name
 	push format
 	call printf
 	add esp,4
